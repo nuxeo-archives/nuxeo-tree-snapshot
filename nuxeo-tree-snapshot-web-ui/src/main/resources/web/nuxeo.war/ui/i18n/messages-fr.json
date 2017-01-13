@@ -1,5 +1,7 @@
 {
-  "app.document.snapshotCreated": "La dossier a été versionné.",
+  "app.document.snapshotCreated": "La dossier a été versionné. Cliquez sur l'onglet Versions pour parcourir la structure versionnée.",
+  "app.document.chooseVersion": "Sélectionnez une version du dossier :",
+  "browser.versioning": "Versions",
   "label.document.type.snapshotablefolder": "Dossier versionnable",
   "snapshotButton.tooltip": "Créer une version du dossier"
 }

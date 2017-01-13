@@ -1,0 +1,58 @@
+<!--
+(C) Copyright 2017 Nuxeo SA (http://nuxeo.com/) and others.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+Contributors:
+  Estelle Giuly <egiuly@nuxeo.com>
+-->
+
+<!--
+`nuxeo-document-versioning-view`
+@group Nuxeo UI
+@element nuxeo-document-versioning-view
+-->
+<dom-module id="nuxeo-document-versioning-view">
+  <template>
+    <style>
+      .title {
+        display: inline-block;
+      }
+
+      nuxeo-document-versions {
+        margin: 0 5px;
+      }
+    </style>
+
+    <!-- Version choice -->
+    <paper-card>
+      <h3 class="title">[[i18n('app.document.chooseVersion')]]</h3>
+
+      <template is="dom-if" if="[[hasFacet(document, 'Versionable')]]">
+        <nuxeo-document-versions document="[[document]]"></nuxeo-document-versions>
+      </template>
+    </paper-card>
+
+  </template>
+
+  <script>
+    Polymer({
+      is: 'nuxeo-document-versioning-view',
+      behaviors: [Nuxeo.I18nBehavior, Nuxeo.FiltersBehavior],
+      properties: {
+        document: Object,
+      }
+    });
+  </script>
+
+</dom-module>

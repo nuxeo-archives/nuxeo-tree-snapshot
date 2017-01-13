@@ -1,5 +1,7 @@
 {
-  "app.document.snapshotCreated": "The folder has been versioned.",
+  "app.document.snapshotCreated": "The folder has been versioned. Go to the Versioning pill to browse the snapshotted structure.",
+  "app.document.chooseVersion": "Choose a version of the folder:",
+  "browser.versioning": "Versioning",
   "label.document.type.snapshotablefolder": "Versionable Folder",
   "snapshotButton.tooltip": "Snapshot the folder"
 }
