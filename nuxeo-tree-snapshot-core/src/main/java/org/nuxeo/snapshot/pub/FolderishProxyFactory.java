@@ -28,10 +28,11 @@ import org.nuxeo.ecm.platform.publisher.api.PublicationNode;
 import org.nuxeo.ecm.platform.publisher.api.PublishedDocument;
 import org.nuxeo.ecm.platform.publisher.impl.core.SimpleCorePublishedDocument;
 import org.nuxeo.ecm.platform.publisher.task.CoreProxyWithWorkflowFactory;
+import org.nuxeo.ecm.platform.rendition.publisher.RenditionPublicationFactory;
 import org.nuxeo.snapshot.Snapshot;
 import org.nuxeo.snapshot.Snapshotable;
 
-public class FolderishProxyFactory extends CoreProxyWithWorkflowFactory {
+public class FolderishProxyFactory extends RenditionPublicationFactory {
 
     protected DocumentModel subPublish(CoreSession session, DocumentModel parentProxy, Snapshot tree, boolean skipParent)
             {
